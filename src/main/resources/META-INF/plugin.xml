@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>org.example.youplug</id>
+    <name>You Plug We Play</name>
+    <vendor email="yourplug@myplug.org" url="http://www.yourplug.com">Your Plugging solution for daily needs</vendor>
+
+    <description><![CDATA[
+    You will have great fun with this plugin.<br>
+    <em>Most markdown tags can also b used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="YouPlug.TopMenu"
+               text="_YouPlug"
+               description="MyPlugin Toolbar Menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="MyAction"
+                    class="MyAction"
+                    text="_MyAction"
+                    description="MyAction taking action"/>
+        </group>
+    </actions>
+</idea-plugin>
