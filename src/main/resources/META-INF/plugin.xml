@@ -27,5 +27,12 @@
                     text="_MyAction"
                     description="MyAction taking action"/>
         </group>
+
+        <action id="EditorIllustrationAction"
+                class="EditorIllustrationAction"
+                text="Smital Editor Replace Text"
+                description="Replaces selected text with 'Replacement'.">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>
